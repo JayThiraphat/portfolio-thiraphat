@@ -1,43 +1,35 @@
-import { useState } from 'react'
-
 import './App.css'
 import NavbarComponent from './components/NavbarComponent'
-import ExpComponent from './components/expComponent'
-import CardaboutComponent from './components/AboutComponent'
-import EduComponent from './components/EduComponent'
-import SkillComponent from './components/SkillComponent'
+import ExpComponent from './components/Contents/expComponent'
+import CardaboutComponent from './components/Contents/AboutComponent'
+import EduComponent from './components/Contents/EduComponent'
+import SkillComponent from './components/Contents/SkillComponent'
+import ResumeData from "../src/Data/resume.json"
+import FooterComponent from './components/FooterComponent'
+import CardindexComponent from './components/Contents/CardindexComponent'
+import ProjectComponent from './components/Contents/ProjectComponent'
+import { v4 as uuidv4 } from 'uuid';
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div>
       <NavbarComponent/>
-    <section className='index'>
-      <div className='card-index'>
-        <h3>Hi, my name is</h3>
-        <h1>Thiraphat Wongwanicha</h1>
-        <p>I'm looking for a web developer </p>
-      </div>
-    </section>
-   <CardaboutComponent/>
-    <ExpComponent/>
-    <EduComponent/>
-    <SkillComponent/>
-   
-    <section className='projects'>
-      <ul className='list-projects'>
-        <h3>My Projects</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis sint autem sit? Debitis aperiam ipsam et modi culpa quam quaerat.</p>
-      </ul>
-    </section>
+      {ResumeData.map( recorddata =>{
+        return(<div>
+            <CardindexComponent basics={recorddata.basics} key={uuidv4()}/>
+            <CardaboutComponent about={recorddata.about} key={uuidv4()}/>
+            <ExpComponent exp={recorddata.experience} key={uuidv4()}/>
+            <EduComponent edu={recorddata.education} key={uuidv4()}/>
+            <SkillComponent skills={recorddata.myskills} key={uuidv4()}/>
+            <ProjectComponent  projects={recorddata.myprojects} key={uuidv4()}/>
+            <FooterComponent contact={recorddata.contact} key={uuidv4()}/>
+          </div>
+        )
+      }
 
-    <footer>
-      <div className="footer-logo">
-        <span>wongwatnicha@gmail.com</span>
-        <img className='pic-ig' src=''  alt=''></img>
-      </div>
-    </footer>
+      )}
+      
     </div>
   )
 }

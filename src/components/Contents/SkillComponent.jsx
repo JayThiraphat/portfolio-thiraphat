@@ -1,7 +1,7 @@
-const SkillComponent=()=>{
+const SkillComponent=(props)=>{
     return (
-        <section className='myskills'>
-        <ul className='list-skills'>
+        <section >
+        <ul>
         <h3>My Skills</h3>
           <li>Web: Html, Javascript, CSS, ReactJs, NodeJs</li>
           <li>Language: C# OOP, VB, VBA, VB6, JAVA</li>

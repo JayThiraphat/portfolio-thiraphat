@@ -4,9 +4,9 @@ const NavbarComponent = ()=>{
         <div>
             <nav>
             <div className='containner'>
-            <div className='logo'>
-                <img src='./logo1.svg' alt=''></img>
-            </div>
+                <div className='logo'>
+                    <img src='./logo1.svg' alt=''></img>
+                </div>
                 <div className='menu_list'>
                 <ul className='menu'>
                     <li><a href='#'>About</a></li>
@@ -17,11 +17,11 @@ const NavbarComponent = ()=>{
                     <li><a href='#'>Contact</a></li>
                 </ul>
                 </div>
-                <div class="navTrigger">
+                {/* <div class="navTrigger">
                     <i></i>
                     <i></i>
                     <i></i>
-                </div>
+                </div> */}
             </div>
         </nav>
       </div>

@@ -1,11 +1,11 @@
 
-const ExpComponent = ()=>{
+const ExpComponent = (props)=>{
     return (
         <div>
-           <section className='experience'>
-      <div className='card-exp'>
+           <section >
+      <div >
         <h3>Experience</h3>
-      <ul className='list-exp'>
+      <ul >
               <li><h4>Actran Systems Co., Ltd., Sathorn</h4></li>
               <li><span>July 2017 – Sep 2022</span></li>
               <li><span>Programmer</span></li>
