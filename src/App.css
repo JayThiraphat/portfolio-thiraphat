@@ -7,9 +7,9 @@
   font-family: 'Gloock', serif;
   
 }
-body{
-  background-image: url("../src/assets/images/BackgoudBubble.svg");
-}
+/* body{
+ 
+} */
 .containner {
   width: 100%;
   height: 70px;

@@ -1,13 +1,13 @@
-import { v4 as uuidv4 } from 'uuid';
-const CardaboutComponent = (props) =>{
+
+const CardaboutComponent = ({about}) =>{
     return (
         <section >
         <div >
-          <h3>{props.about.title}</h3>
+          <h3>{about.title}</h3>
           <div >
-            <img src={props.about.imageme} alt=""></img>
-            {props.about.aboutdetail.map((element)=>{
-              return <p key={uuidv4()}>{...element} </p>
+            <img src={about.imageme} alt=""></img>
+            {about.aboutdetail.map((element,index)=>{
+              return <p key={index}>{...element} </p>
             })}
           </div>
         </div>

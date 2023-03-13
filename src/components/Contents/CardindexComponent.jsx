@@ -1,10 +1,10 @@
-const CardindexComponent = (props) =>{
+const CardindexComponent = ({basic}) =>{
     return(
         <section>
         <div >
-          <h3>Hi, my name is</h3>
-          <h1>Thiraphat Wongwanicha</h1>
-          <p>I'm looking for a web developer </p>
+          <h3>{basic.greet}</h3>
+          <h1>{basic.name}</h1>
+          <p>{basic.desc}</p>
         </div>
       </section>
     )

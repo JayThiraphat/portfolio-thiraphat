@@ -1,14 +1,13 @@
-const EduComponent = (props) =>{
+const EduComponent = ({edu}) =>{
     return(
         <section >
         <div >
-          <h3>Education</h3>
-          <span>2014 - 2017</span>
+          <h3>{edu.title}</h3>
+          <span>{edu.startendDate}</span>
           <ul >
-            <li>Prince of Songkla University (PSU), Hat Yai</li>
-            <li> Bachelor of Science in May 2017 </li>
-            <li> Major: Computer Science </li>
-            <li> GPA: 2.69</li>
+            {edu.educationdetail.map((educationdetail,index) => (
+                    <li key={index}><p>{educationdetail}</p></li>
+            ))}
           </ul>
         </div>
       </section>

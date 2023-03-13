@@ -1,10 +1,10 @@
-const ProjectComponent=(props)=>{
+const ProjectComponent=({project})=>{
     return (
       <div>
         <section >
           <ul>
-            <h3>My Projects</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis sint autem sit? Debitis aperiam ipsam et modi culpa quam quaerat.</p>
+            <h3>{project.title}</h3>
+              <p>{project.name}</p>
           </ul>
       </section>
       </div>
