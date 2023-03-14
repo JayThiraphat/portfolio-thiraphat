@@ -1,9 +1,10 @@
+
 export const ResumeData = {
     basics:
         {
             greet:"Hi my name is",
             name:"Thiraphat Wongwaticha",
-            desc:"I'm looking for a web developer"
+            desc:"I'm looking for a web developer."
         }
             ,
     about:{
@@ -20,19 +21,15 @@ export const ResumeData = {
             title:"Experience",
             company: "Actran Systems Co., Ltd., Sathorn",
             startendDate:"July 2017 – Sep 2022",
-            position:"Programmer",
+            position:"Position: Programmer",
             expDetail:[
-                "Duties included developing Add-ons ERP Software",
-                "(Sage 300 and SAP B1) to support customer applications.",
+                "Duties included developing Add-ons ERP Software(Sage 300 and SAP B1) to support customer applications.",
                 "Design the appearance of the program, ",
-                "Design the program structure, Design a database structure",
+                "Design the program structure, Design a database structure,",
                 "Solving problems in ERP software",
-                "tools:",
-                "Microsoft visual studio, ",
-                "Crystal report,",
-                "Microsoft SQL Server,",
-                "SAP HANA studio"
+          
             ],
+            Tools:"Tools: Microsoft visual studio, Crystal report, Microsoft SQL Server, SAP HANA studio",
             Language:"Language: VB6, VBA, VB, C# OOP, SQL, HANA",
             SiteReference:{
                 RefCompany:"YAMATO UNYU(THAILAND) CO., LTD.",
@@ -46,7 +43,7 @@ export const ResumeData = {
         {
             company:"Freewill Solution Co. Ltd., Lumpini (Triannee)",
             startendDate:"May - July 2016",
-            position:"Software Developer Trainee",
+            position:"Position: Software Developer Trainee",
             expDetail:[
                 "Duties included developing stock application",
                 "Studying computer language C# WPF",
@@ -67,10 +64,12 @@ export const ResumeData = {
     myskills:{
         title:"My Skills",
         Detailskill:[
-        "Web:ReactJs, NodeJs, html, javascript, CSS,",
-        "Languageother:C# OOP, VB, VBA, VB6, JAVA",
-        "Database:SQL, MongoDB ,HANA"
-        ]
+        "Web: ReactJs, NodeJs, Html, Javascript, CSS",
+        "Languageother: C# OOP, VB, VBA, VB6, JAVA",
+        "Database: SQL, MongoDB ,HANA"
+        ],
+        imggit:"https://cdns.iconmonstr.com/wp-content/releases/preview/2012/240/iconmonstr-github-1.png",
+        linkgit:"https://github.com/JayThiraphat"
     },
     myprojects:{
         title:"My Projects",

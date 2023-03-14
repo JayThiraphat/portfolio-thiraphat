@@ -1,14 +1,15 @@
 import './App.css'
-import NavbarComponent from './components/NavbarComponent'
-import FooterComponent from './components/FooterComponent'
-import CardBodyContent from './components/CardBodyContent'
+import NavbarComponent from './components/Navbar/NavbarComponent'
+import FooterComponent from './components/Footer/FooterComponent'
+import CardBodyContent from './components/Body/CardBodyComponent'
+
 
 
 
 function App() {
   return (
     <div>
-      <NavbarComponent/>
+      <NavbarComponent />
       <CardBodyContent />
       <FooterComponent/>
     </div>

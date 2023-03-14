@@ -1,0 +1,38 @@
+.about{
+    width: 100%;
+    height: 40vh;
+  }
+  .card__about{
+    margin: 0 2% 2%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+    padding: 30px;
+    background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+  }
+  .card__abouth3{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  .card__aboutdetail{
+    display: flex;
+    flex-direction: row;
+  }
+  .card__abouttextbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 3rem;
+    
+  }
+  .card__img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+  }
+  .card__abouttext{
+    margin:0.5rem
+  }
+  
