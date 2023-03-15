@@ -69,6 +69,10 @@
 	transform: scale(1);
     
 }
+.nav--active{
+  transition: 850ms;
+  display: none;
+}
 /* Navbar */
 .navTrigger {
   display: none;
@@ -79,6 +83,9 @@
   width: 30px;
   height: 25px;
 
+}
+.nav__close{
+  display: none;
 }
 /* Responsive */
 @media screen and (max-width:992px) {
@@ -96,6 +103,51 @@
   .log__text{
     font-size: 1.5rem;
   }
+  .nav{
+    background: whitesmoke;
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    position: fixed;
+    right: -60%;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: 850ms;
+  }
+  .nav__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 11rem;
+  }
+  .nav__close{
+    display: flex;
+    position: fixed;
+    right:-10%;
+    top:1%;
+    z-index: 2;
+    cursor: pointer;
+  }
+  .nav__iconclose{
+    width: 40px;
+    height:40px ;
+  }
+  .nav--active{
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    position: fixed;
+    right: -7%;
+    transition: 350ms;
+}
+.icon--active{
+  right:3%;
+  transition: 350ms;
+}
+
   }
   /* Animation */
   /* Inspiration taken from https://codepen.io/pen/VwGaXJY */

@@ -4,8 +4,6 @@ import FooterComponent from './components/Footer/FooterComponent'
 import CardBodyContent from './components/Body/CardBodyComponent'
 
 
-
-
 function App() {
   return (
     <div>
